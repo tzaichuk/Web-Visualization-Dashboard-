@@ -5,13 +5,50 @@
   <meta charset="UTF-8">
   <title>Web Visualization Dashboard</title>
   <link rel="stylesheet" href="/homework12/assets/css/style.css?v=d4dcdcbddf184ae9acdd0ae5fc76c5f729b70c79">
+ 
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <a href="landing-page.html">Latitude</a><br>
 </head>
 
 <body>
+	
+  <div class="container">
+    <nav class="navbar">
+     
+    <ul>  
+        <li>
+          <a href="#">Plots</a>
+        </li>
+        <li>
+          <a href="#">Comparisons</a>
+        </li>
+        <li>
+          <a href="#">data</a>
+        </li>
+      </ul>
+    
+	  <select id="nav-select">
+		<option value="Plots">Plots</option>
+		<div class="clearfix"></div>
+        <option value="Comparisons">Comparisons</option>
+        <option value="data">data</option>
+      </select>
+      <div class="clearfix"></div>
+    </nav>
 <div class="index">
-	<h1>Landing Page</h1>
-	<h3> Project Purpose </h3>
-	<p> The purpose of this project is to...</p>
+	
+    <h2> Summary </h2>
+   
+	<p> The purpose of this project is to analyse how weather changes as you
+		get closer to the equator. Data from the OpenWeatherMap API
+		were used to create a dataset on over 500 cities. 
+		We used Mathplotlib to plot various aspects of the weather (temperature,
+		cloudiness, wind speed, and humidity) vs. latitude.
+		This side provides the source data and visualizations created as part
+		of the analysis, as well as explanations and descriptions of any trends and 
+		correlations witnessed.
+	</p>
 	<h3> Visualization pages </h3>
 	<a href="visualization-page-1.html">visualization page 1</a><br>
 	<a href="visualization-page-2.html">visualization page 2</a><br>

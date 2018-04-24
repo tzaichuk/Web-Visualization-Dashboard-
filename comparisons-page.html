@@ -3,13 +3,73 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Web Visualization Dashboard</title>
+	<title>Web Visualization Dashboard</title>
+	 
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <a href="landing-page.html">Latitude</a><br>
 </head>
 
 <body>
-	<div class="index">
-		<h1>Data comparisons</h1>
+	
+  <div class="container">
+    <nav class="navbar">
+     
+    <ul>  
+        <li>
+          <a href="#">Plots</a>
+        </li>
+        <li>
+          <a href="#">Comparisons</a>
+        </li>
+        <li>
+          <a href="#">data</a>
+        </li>
+      </ul>
+    
+	  <select id="nav-select">
+		<option value="Plots">Plots</option>
+		<div class="clearfix"></div>
+        <option value="Comparisons">Comparisons</option>
+        <option value="data">data</option>
+      </select>
+      <div class="clearfix"></div>
+    </nav>
+<div class="index">
+</head>
 
+<body>
+
+		<section>
+			<h1>Data comparisons</h1>
+			<a target="_blank" href="output_data/Fig1.png">
+				<img src="output_data/Fig1.png" alt="Lattitude" width=600>
+			</a>
+			<p><em>Max temperature</em></p>
+			</article>
+			<hr>
+			<article>
+			<a target="_blank" href="output_data/Fig2.png">
+			<img src="output_data/Fig2.png" alt="Humidity Map" width=600>
+			</a>
+			<p><em>Humidity Map</em></p>
+			</article>
+			<hr>
+			<article>
+				<a href="output_data/Fig3.png">
+				<img target="_blank" src="output_data/Fig3.png" alt="City Latitude vs Cloudiness" width=600>
+				</a>
+				<p><em>City Latitude vs Cloudiness</em></p>
+			</article>
+			<hr>
+			<!-- an example using figure/ficaption -->
+			<figure>
+				<a target="_blank" href="output_data/Fig4.png">
+				<img src="output_data/Fig4.png" alt="Wind Map" width=600>
+				</a>
+				<figcaption><em>Wind Map</em></figcaption>
+			</figure>
+		</section>
 
 	</div>
 </body>

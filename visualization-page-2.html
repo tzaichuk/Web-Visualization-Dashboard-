@@ -1,19 +1,51 @@
----
-layout: default
-title: Visualizations Page
----
+
 <!DOCTYPE html>
 <html lang="en-us">
 
 <head>
   <meta charset="UTF-8">
   <title>Web Visualization Dashboard</title>
+   
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <a href="landing-page.html">Latitude</a><br>
+</head>
+
+<body>
+	
+  <div class="container">
+    <nav class="navbar">
+     
+    <ul>  
+        <li>
+          <a href="#">Plots</a>
+        </li>
+        <li>
+          <a href="#">Comparisons</a>
+        </li>
+        <li>
+          <a href="#">data</a>
+        </li>
+      </ul>
+    
+	  <select id="nav-select">
+		<option value="Plots">Plots</option>
+		<div class="clearfix"></div>
+        <option value="Comparisons">Comparisons</option>
+        <option value="data">data</option>
+      </select>
+      <div class="clearfix"></div>
+    </nav>
+<div class="index">
 </head>
 
 <body>
 	<div class="index">
 		<h1>Visualization Page: City Latitude vs Humidity</h1>
 		<img alt="Landing page" src="output_data/Fig2.png" width=600>
+		<p> Humidity is highest at the equator.Humidity level's distribution is approximately the same in
+			the southern and northern hemisohere.
+		</p>
 	</div>
 </body>
 </html>
